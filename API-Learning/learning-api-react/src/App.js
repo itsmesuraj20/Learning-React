@@ -16,9 +16,15 @@ function App() {
     getRandomUser().then((user) =>setUserData(user.results[0]));
   },[]);
 
+  const refresh = () => {
+    getRandomUser().then((user) =>setUserData(user.results[0]));
+  }
+
   return (
     <div className="App">
+    
     {userData && <UserCard data ={userData} />}
+    <button onClick={refresh}>Refresh</button>
      {
       data ? data.map(e => <PostCard title = {e.title} body = {e.body}/>)
       : <p>No Data Received</p>
