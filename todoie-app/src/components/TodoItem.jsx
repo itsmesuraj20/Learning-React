@@ -4,10 +4,8 @@ const TodoItem = (props) => {
   return (
     <li>
     <span>
-        <input type="checkbox" />
-        <p>{props.title}</p>
+        <input type="checkbox" />{/*  */}
         <span className="todo-item-text">{props.title}</span>
-        <p>....</p>
     </span>
     </li>  
   )
