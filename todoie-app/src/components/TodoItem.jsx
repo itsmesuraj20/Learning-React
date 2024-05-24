@@ -1,6 +1,7 @@
 import React from 'react'
 
-const TodoItem = (props) => {
+
+function TodoItem(props){
   return (
     <li>
     <span>
