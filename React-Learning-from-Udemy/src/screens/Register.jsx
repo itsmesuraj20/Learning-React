@@ -20,7 +20,7 @@ function handleRegister(event){
             }>Submit</button>
             </div>
         ) : (
-            <h1>Hurr</h1>
+            <h1>Hurr!!</h1>
         )}
             
         </form>
